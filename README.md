@@ -19,9 +19,6 @@ Each activation function aims to tackle issues such as the vanishing gradient pr
   - [3. Exponential Linear Squasher (ELS)](#3-exponential-linear-squasher-els)
 - [Key Features and Advantages](#key-features-and-advantages)
 - [Usage](#usage)
-- [Performance Considerations](#performance-considerations)
-- [Future Directions](#future-directions)
-- [License](#license)
 
 ---
 
@@ -42,16 +39,18 @@ This repository presents three custom activations—LPAF, Modified LPAF, and ELS
 ### 1. Logarithmic Potential Activation Function (LPAF)
 
 **Definition:**
-\[
-f(x) = x \cdot \ln(1 + x^2)
-\]
+<img width="482" alt="image" src="https://github.com/user-attachments/assets/537a1979-3a4e-4b85-b52e-2b516e23cf72">
+
+**Derivative:**
+<img width="497" alt="image" src="https://github.com/user-attachments/assets/f3f895a1-31f6-4e4c-9cb5-97085370f409">
+
 
 **Properties:**
 - Non-linear scaling of the input.
 - Intended to maintain significant gradients across a wide input range.
 - Offers a unique interpretation by linking activation strength to a logarithmic potential function.
 
-While LPAF was conceptually promising, empirical results on image classification tasks did not surpass standard baselines like ReLU.
+
 
 ---
 
@@ -79,22 +78,12 @@ Although more stable than the original LPAF, this modified version still did not
 ### 3. Exponential Linear Squasher (ELS)
 
 **Definition:**
-\[
-f(x) = 
-\begin{cases} 
-x & \text{if } x \geq 0 \\
-x \cdot e^{x} & \text{if } x < 0
-\end{cases}
-\]
+<img width="422" alt="image" src="https://github.com/user-attachments/assets/2951deae-ab70-48de-84da-9fe4514cb174">
+
 
 **Derivative:**
-\[
-f'(x) = 
-\begin{cases} 
-1 & \text{if } x \geq 0 \\
-e^{x}(1 + x) & \text{if } x < 0
-\end{cases}
-\]
+<img width="447" alt="image" src="https://github.com/user-attachments/assets/32e248ae-7cdf-4b59-8053-6ae952e0924d">
+
 
 **Properties:**
 - Smoothly transitions between linear behavior for positive inputs and a smoothly decaying exponential for negative inputs.
@@ -142,7 +131,7 @@ model = tf.keras.Sequential([
 
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.summary()
-
+  ```
 
 
 <img width="743" alt="image" src="https://github.com/user-attachments/assets/dbc608c0-7b6f-4694-b13b-cbbb64a9c80d">
