@@ -1,4 +1,5 @@
 # Custom Activation Functions for Deep Learning
+An activation function in a neural network is a mathematical function applied to the output of a neuron (or node) to introduce non-linearity into the model. It determines the neuron’s output given its input signals and weights, allowing the network to learn and represent complex patterns beyond what a purely linear model could achieve. By controlling the neuron’s firing behavior, the activation function influences the network’s capacity to approximate nonlinear mappings and extract intricate features from data.
 
 This repository introduces three custom activation functions designed to address various challenges in training deep neural networks, especially for image classification tasks. The functions are:
 
@@ -96,11 +97,9 @@ ELS is designed to combine the simplicity and efficiency of ReLU with improved h
 
 ## Key Features and Advantages
 
-- **Non-Linearity:** All three functions introduce non-linear transformations to capture complex data patterns.
-- **Gradient Stability:** Designed to reduce the risk of vanishing or exploding gradients.
-- **Interpretability:** Outputs reflect meaningful transformations of inputs, aiding in understanding model behavior.
-- **Computational Efficiency:** Functions rely on operations (multiplications, exponentials, logarithms) that are efficiently computed on modern hardware.
-- **Compatibility:** Easily integrable into existing deep learning frameworks (e.g., TensorFlow, PyTorch) by defining custom layers.
+![key_F](https://github.com/user-attachments/assets/7b80670c-9109-4aea-acd8-29ac71206302)
+
+
 
 ---
 
