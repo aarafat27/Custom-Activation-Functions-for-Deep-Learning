@@ -76,10 +76,12 @@ This repository presents three custom activations—LPAF, Modified LPAF, and ELS
 ### 3. Exponential Linear Squasher (ELS)
 
 **Definition:**
+
 <img width="422" alt="image" src="https://github.com/user-attachments/assets/2951deae-ab70-48de-84da-9fe4514cb174">
 
 
 **Derivative:**
+
 <img width="447" alt="image" src="https://github.com/user-attachments/assets/32e248ae-7cdf-4b59-8053-6ae952e0924d">
 
 
