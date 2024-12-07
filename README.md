@@ -1,4 +1,8 @@
 # Custom Activation Functions for Deep Learning
+
+![act](https://github.com/user-attachments/assets/8ff498f8-34a7-418d-a1f1-82a291d26195)
+
+## What is activation function?
 An activation function in a neural network is a mathematical function applied to the output of a neuron (or node) to introduce non-linearity into the model. It determines the neuron’s output given its input signals and weights, allowing the network to learn and represent complex patterns beyond what a purely linear model could achieve. By controlling the neuron’s firing behavior, the activation function influences the network’s capacity to approximate nonlinear mappings and extract intricate features from data.
 
 This repository introduces three custom activation functions designed to address various challenges in training deep neural networks, especially for image classification tasks. The functions are:
