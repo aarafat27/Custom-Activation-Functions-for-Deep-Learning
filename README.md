@@ -1,0 +1,1 @@
+# Logarithmic-Potential-Activation-Function-LPAF-
