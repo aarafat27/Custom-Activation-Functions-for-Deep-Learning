@@ -1,4 +1,3 @@
-# Logarithmic Potential Activation Function (LPAF)
 # Custom Activation Functions for Deep Learning
 
 This repository introduces three custom activation functions designed to address various challenges in training deep neural networks, especially for image classification tasks. The functions are:
@@ -39,9 +38,11 @@ This repository presents three custom activations—LPAF, Modified LPAF, and ELS
 ### 1. Logarithmic Potential Activation Function (LPAF)
 
 **Definition:**
+
 <img width="482" alt="image" src="https://github.com/user-attachments/assets/537a1979-3a4e-4b85-b52e-2b516e23cf72">
 
 **Derivative:**
+
 <img width="497" alt="image" src="https://github.com/user-attachments/assets/f3f895a1-31f6-4e4c-9cb5-97085370f409">
 
 
@@ -61,17 +62,14 @@ This repository presents three custom activations—LPAF, Modified LPAF, and ELS
 - Improve gradient behavior and control output magnitude.
 
 **Modified Definition (example modification):**
-\[
-f(x) = \tanh(\alpha \cdot x \cdot \ln(1 + x^2))
-\]
-with a small scaling factor \(\alpha\).
+
+<img width="514" alt="image" src="https://github.com/user-attachments/assets/8436d967-3208-45d2-a6a4-9e5e0fc5a714">
+
 
 **Properties:**
 - The use of `tanh` ensures outputs are bounded between -1 and 1.
 - Scaling factor \(\alpha\) controls the function’s growth, preventing excessively large values.
 - Improves stability compared to the original LPAF.
-
-Although more stable than the original LPAF, this modified version still did not offer a clear performance advantage over established functions like ReLU in practical experiments.
 
 ---
 
@@ -133,12 +131,4 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 model.summary()
   ```
 
-
-<img width="743" alt="image" src="https://github.com/user-attachments/assets/dbc608c0-7b6f-4694-b13b-cbbb64a9c80d">
-
-# 
-<img width="607" alt="image" src="https://github.com/user-attachments/assets/9b530098-e483-4266-9b75-2d65b7639522">
-
-##
-<img width="602" alt="image" src="https://github.com/user-attachments/assets/4e8c592c-9b30-4ef9-ab3b-ac7d17f4ecd5">
 
